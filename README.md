@@ -8,4 +8,4 @@
 
 ### yarn build
 
-打包项目
+打包项目 build
