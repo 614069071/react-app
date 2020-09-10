@@ -8,9 +8,10 @@ export default class Home extends Component {
       num: 0,
     };
   }
-  increment = () => {
+  increment = (type) => {
     let { num } = this.state;
-    this.setState({ num: num++ });
+    type === "+" ? num++ : num--;
+    this.setState({ num });
   };
 
   render() {
@@ -18,8 +19,8 @@ export default class Home extends Component {
     return (
       <div className="home">
         <p>num:{num}</p>
-        <button>sum++</button>
-        <button>sum--</button>
+        <button onClick={() => this.increment("+")}>sum++</button>
+        <button onClick={() => this.increment("-")}>sum--</button>
         <p>
           <Link to="/about">go to about</Link>
         </p>
