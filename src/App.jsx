@@ -1,8 +1,8 @@
 import React from "react";
 import { Switch, Route, HashRouter } from "react-router-dom";
-import Home from "./views/Home";
-import About from "./views/About";
-import "./css/index.css";
+import Home from "@/views/Home";
+import About from "@/views/About";
+import "./styles/index.css";
 
 const App = (
   <HashRouter>
