@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Container from "./../container";
 import { Connect } from "../store";
 import { login, register } from "../store/actions";
@@ -26,6 +27,7 @@ class About extends Component {
         <p>我是store上的数据：{this.props.state.register.nickname}</p>
         <button onClick={this.changeUsername}>change username</button>
         <button onClick={this.changeNickname}>change nickname</button>
+        <Link to="/">go to home</Link>
       </div>
     );
   }
